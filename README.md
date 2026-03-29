@@ -1,7 +1,3 @@
-Here’s a **GitHub-ready, polished README.md** with badges, visuals, and a strong presentation 👇
-
----
-
 # 🚀 AlgoFlow Visualizer
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange?logo=html5)
@@ -49,9 +45,13 @@ Instead of memorizing code, users can:
 ### 🎯 Algorithm Visualizations
 
 ✔ Step-by-step animations
+
 ✔ Adjustable speed control
+
 ✔ Color-coded operations (compare, swap, sorted)
-✔ Pseudocode + memory tricks
+
+✔ Pseudocode + memory tricks 
+
 ✔ Time & space complexity
 
 Supported algorithms:
@@ -152,10 +152,10 @@ AlgoFlow/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/algoflow.git
+https://github.com/moningi-nidhi25/Algorithm-Visualizer.git
 
 # Open project
-cd algoflow
+cd Algorithm-Visualizer
 
 # Run
 Open index.html in your browser
@@ -182,5 +182,3 @@ If you like this project:
 
 ---
 
-* Generate **real screenshot mockups from your UI**
-* Or create a **cool animated GIF demo (for GitHub wow factor)** 🚀
