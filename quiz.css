@@ -1,0 +1,44 @@
+.quiz-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.question {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  background: #020617;
+  color: white;
+  border: 1px solid var(--border);
+}
+
+.options button:hover {
+  background: var(--teal-dim);
+  color: black;
+}
+
+.options button.selected {
+  background: var(--teal);
+  color: black;
+  border: 1px solid var(--teal);
+} 
+
+.result {
+  font-size: 20px;
+  color: var(--teal);
+  margin-top: 15px;
+}
+
+#nextBtn {
+  display: none;
+  margin-top: 10px;
+}

@@ -1,0 +1,54 @@
+.stop-btn { 
+  background:#ef4444; 
+  color:white; 
+}
+.reset-btn { 
+  background:#f59e0b; 
+  color:black; 
+}
+
+.controls {
+   margin:20px; 
+}
+
+.bars {
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  height:300px;
+  margin-top:30px;
+}
+
+.bar {
+  width:40px;
+  margin:5px;
+  background: var(--teal);
+  text-align:center;
+  border: 1px solid var(--teal);
+  border-radius: 8px 8px 0 0;
+  transition:0.2s;
+}
+
+.active { 
+  background:#ef4444; 
+  border: 1px solid #ef4444;
+}
+
+.swap { 
+  background:#c5c522; 
+  border: 1px solid #c5c522;
+}
+
+#explanation {
+    margin-top:20px;
+    font-size:18px;
+    color: var(--text-dim);
+}
+
+.good { 
+  color:#22c55e; 
+}
+
+.bad { 
+  color:#ef4444; 
+}

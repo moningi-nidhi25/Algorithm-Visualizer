@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AlgoFlow Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #94a3b8;
+    }
+
+    .section {
+      padding: 100px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      background: #b85e14;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .complexity {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AlgoFlow Visualizer</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="comparison.html">Compare</a>
+    <a href="https://www.programiz.com/c-programming/online-compiler/">Compiler</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Understand Algorithms<br>Through <span>Visualization</span></h2>
+  <p>Watch algorithms come alive with step-by-step animations, simple explanations, and memory tricks. Built for beginners who want to truly understand.</p>
+</section>
+
+<section class="section">
+  <h2>Algorithms</h2>
+  <div class="info">
+
+    <div class="card" onclick="window.location.href='bubble.html'">
+      <span class="tag">Sorting</span>
+      <h3>Bubble Sort</h3>
+      <p>Repeatedly swaps adjacent elements if they are in the wrong order.</p>
+      <div class="complexity">Time: O(n²) | Space: O(1)</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='selection.html'">
+      <span class="tag">Sorting</span>
+      <h3>Selection Sort</h3>
+      <p>Selects the minimum element from the unsorted part and places it at the beginning.</p>
+      <div class="complexity">Time: O(n²) | Space: O(1)</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='insertion.html'">
+      <span class="tag">Sorting</span>
+      <h3>Insertion Sort</h3>
+      <p>Builds a sorted array one element at a time by inserting elements into their correct position.</p>
+      <div class="complexity">Time: O(n²) | Space: O(1)</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='heap.html'">
+      <span class="tag">Sorting</span>
+      <h3>Heap Sort</h3>
+      <p>Uses a binary heap to repeatedly extract the maximum (or minimum) element.</p>
+      <div class="complexity">Time: O(n log n) | Space: O(1)</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='quick.html'">
+      <span class="tag">Sorting</span>
+      <h3>Quick Sort</h3>
+      <p>Divides the array using a pivot and recursively sorts the partitions.</p>
+      <div class="complexity">Time: O(n log n) avg | O(n²) worst</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='merge.html'">
+      <span class="tag">Sorting</span>
+      <h3>Merge Sort</h3>
+      <p>Divides the array into halves, sorts them, and merges them back together.</p>
+      <div class="complexity">Time: O(n log n) | Space: O(n)</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='linear.html'">
+      <span class="tag">Searching</span>
+      <h3>Linear Search</h3>
+      <p>Checks each element sequentially until the target is found.</p>
+      <div class="complexity">Time: O(n) | Space: O(1)</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='binary.html'">
+      <span class="tag">Searching</span>
+      <h3>Binary Search</h3>
+      <p>Repeatedly divides a sorted array to find the target efficiently.</p>
+      <div class="complexity">Time: O(log n) | Space: O(1)</div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+:root {
+  --bg-color: #050a18;      
+  --teal: #00d1b2;         
+  --text-main: #ffffff;
+  --text-dim: #a0aec0;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #020617;
+}
+
+header h1 {
+  color: #00FFFF;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #cbd5f5;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: #1e293b;
+}
+
+input {
+  padding:12px;
+  width:320px;
+  margin:10px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:#020617;
+  color:white;
+}
+
+button {
+  padding:10px 16px;
+  margin:5px;
+  border-radius:8px;
+  border:none;
+  background: var(--teal);
+  color:black;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+button:hover {
+  opacity:0.8;
+}
+
+.info {
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card {
+  background: var(--card-bg);
+  border:1px solid var(--border);
+  padding:20px;
+  border-radius:15px;
+  width:300px;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #1e293b;
+  border: 1px solid var(--teal);
+}
+
+.card h3 {
+  color: var(--teal);
+  margin-bottom:10px;
+}
+

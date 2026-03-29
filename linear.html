@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Linear Search Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="visualization.css">
+</head>
+
+<body>
+<header>
+  <h1>AlgoFlow Visualizer</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="comparison.html">Compare</a>
+    <a href="https://www.programiz.com/c-programming/online-compiler/">Compiler</a>
+  </nav>
+</header>
+
+<h1>Linear Search Visualizer</h1>
+<label for="inputArray">Array</label>
+<input id="inputArray" value="5,3,8,1,2,7" />
+<label for="target">Element</label>
+<input id="target" value="1" />
+
+<div class="controls">
+  <button onclick="startSearch()">Start</button>
+  <button class="stop-btn" onclick="stopSearch()">Stop</button>
+  <button class="reset-btn" onclick="resetAll()">Reset</button>
+
+  <div>Speed: <span id="speedValue">Medium</span></div>
+  <input type="range" id="speedSlider" min="100" max="1500" value="700" step="100">
+</div>
+
+<div class="bars" id="bars"></div>
+<p id="explanation"></p>
+
+<div class="info">
+
+  <!-- Legend -->
+  <div class="card">
+    <h3>🎨 Legend</h3>
+    <p><span style="color:teal; font-size: 30px;">■</span> Unchecked</p>
+    <p><span style="color:red; font-size: 30px;">■</span> Checking</p>
+    <p><span style="color:#22c55e; font-size: 30px;">■</span> Found</p>
+  </div>
+
+  <!-- Time -->
+  <div class="card">
+    <h3>⏱ Time Complexity</h3>
+    <p>🟢 Best: O(1)</p>
+    <p>🟡 Average: O(n)</p>
+    <p>🔴 Worst: O(n)</p>
+  </div>
+
+  <!-- Memory -->
+  <div class="card">
+    <h3>💾 Memory Usage</h3>
+    <p>📦 Extra Space: O(1)</p>
+    <p>⚡ No extra memory</p>
+  </div>
+
+  <!-- Use -->
+  <div class="card">
+    <h3>📌 When to Use</h3>
+    <p class="good">✔ Small datasets</p>
+    <p class="good">✔ Unsorted arrays</p>
+    <p class="bad">✖ Large datasets</p>
+  </div>
+
+  <!-- Pseudocode -->
+  <div class="card">
+    <h3>🧠 Pseudocode</h3>
+    <pre style="font-size:13px; white-space:pre-wrap;">
+for i = 0 to n-1:
+  if arr[i] == target:
+    return i
+return -1
+    </pre>
+  </div>
+
+  <!-- Trick -->
+  <div class="card">
+    <h3>💡 Memory Trick</h3>
+    <p>🔍 Check one by one</p>
+    <p>Stop when found</p>
+  </div>
+
+</div>
+
+<script src="linear.js"></script>
+<script src="visualization.js"></script>
+</body>
+</html>

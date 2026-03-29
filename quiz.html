@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AlgoFlow Quiz</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+<header>
+  <h1>AlgoFlow Visualizer</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="comparison.html">Compare</a>
+    <a href="https://www.programiz.com/c-programming/online-compiler/">Compiler</a>
+  </nav>
+</header>
+
+<h1>Select Quiz Topic</h1>
+
+<div class="info">
+  <button onclick="startQuiz('bubble')">Bubble Sort</button>
+  <button onclick="startQuiz('selection')">Selection Sort</button>
+  <button onclick="startQuiz('insertion')">Insertion Sort</button>
+  <button onclick="startQuiz('merge')">Merge Sort</button>
+  <button onclick="startQuiz('quick')">Quick Sort</button>
+  <button onclick="startQuiz('heap')">Heap Sort</button>
+  <button onclick="startQuiz('linear')">Linear Search</button>
+  <button onclick="startQuiz('binary')">Binary Search</button>
+  <button onclick="startQuiz('mixed 1')">Mixed 1</button>
+  <button onclick="startQuiz('mixed 2')">Mixed 2</button>
+</div>
+
+<div class="quiz-container" id="quizBox" style="display:none;">
+  <div class="question" id="question"></div>
+  <div class="options" id="options"></div>
+
+  <center><button id="nextBtn" onclick="nextQuestion()">Next</button></center>
+
+  <div class="result" id="result"></div>
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

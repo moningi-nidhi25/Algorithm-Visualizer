@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorting Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="comparison.css">
+</head>
+<body>
+  <header>
+  <h1>AlgoFlow Visualizer</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="#">Compare</a>
+    <a href="https://www.programiz.com/c-programming/online-compiler/">Compiler</a>
+  </nav>
+</header>
+<h1>Sorting Comparison Dashboard</h1>
+<input id="inputArray" value="5,3,8,1,2,7">
+<button onclick="runAll()">Start All</button>
+
+<div class="container">
+  <div class="panel"><h3>Bubble</h3><div id="bubble" class="bars"></div><div class="stats" id="bubbleStats"></div></div>
+  <div class="panel"><h3>Selection</h3><div id="selection" class="bars"></div><div class="stats" id="selectionStats"></div></div>
+  <div class="panel"><h3>Insertion</h3><div id="insertion" class="bars"></div><div class="stats" id="insertionStats"></div></div>
+  <div class="panel"><h3>Merge</h3><div id="merge" class="bars"></div><div class="stats" id="mergeStats"></div></div>
+  <div class="panel"><h3>Quick</h3><div id="quick" class="bars"></div><div class="stats" id="quickStats"></div></div>
+  <div class="panel"><h3>Heap</h3><div id="heap" class="bars"></div><div class="stats" id="heapStats"></div></div>
+</div>
+
+<script src="comparison.js"></script>
+</body>
+</html>

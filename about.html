@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .about-title span {
+            color: var(--teal);
+        }
+
+        .about-description {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            max-width: 800px;
+            margin: 0 auto 60px;
+            line-height: 1.6;
+        }
+
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>AlgoFlow Visualizer</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="comparison.html">Compare</a>
+            <a href="https://www.programiz.com/c-programming/online-compiler/">Compiler</a>
+        </nav>
+    </header>
+    <section id="about" class="section">
+        <h1 class="about-title">Visualizing the <span>Logic</span></h1>
+        <p class="about-description">
+            We believe that Data Structures and Algorithms are beautiful, not intimidating. 
+            AlgoFlow was designed to bridge the gap between dry code and deep, intuitive understanding.
+        </p>
+
+        <div class="info">
+            <div class="card">
+                <span class="card-icon">🧠</span>
+                <h3>Beyond Syntax</h3>
+                <p>Coding is about flow. We help you see the movement of data, so you stop memorizing and start problem-solving.</p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">⚡</span>
+                <h3>Real-Time Analysis</h3>
+                <p>Watch complex algorithms come to life. Adjust speeds and data inputs to see how logic scales under pressure.</p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">🔍</span>
+                <h3>Side-by-Side Comparison</h3>
+                <p>
+                    Run multiple sorting algorithms together and compare their 
+                    performance using live comparisons and swap counts.
+                </p>
+            </div>
+            <div class="card">
+                <span class="card-icon">📘</span>
+                <h3>Quiz Section</h3>
+                <p>
+                    Evaluate your knowledge through structured quizzes covering sorting and searching techniques. 
+                    Designed to help you assess understanding and identify areas for improvement.
+                </p>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+</body>
+</html>

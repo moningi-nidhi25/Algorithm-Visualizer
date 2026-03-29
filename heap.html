@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Heap Sort Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="visualization.css">
+  <style>
+    .heap { background:orange; }
+  </style>
+</head>
+
+<body>
+  <header>
+  <h1>AlgoFlow Visualizer</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="comparison.html">Compare</a>
+    <a href="https://www.programiz.com/c-programming/online-compiler/">Compiler</a>
+  </nav>
+</header>
+<h1>Heap Sort Visualizer</h1>
+
+<input id="inputArray" value="5,3,8,1,2,7" />
+
+<div class="controls">
+  <button onclick="startSort()">Start</button>
+  <button class="stop-btn" onclick="stopSort()">Stop</button>
+  <button class="reset-btn" onclick="resetAll()">Reset</button>
+
+  <div>Speed: <span id="speedValue">Medium</span></div>
+  <input type="range" id="speedSlider" min="100" max="1500" value="700" step="100">
+</div>
+
+<div class="bars" id="bars"></div>
+<p id="explanation"></p>
+<div class="info">
+
+  <div class="card">
+    <h3>Legend</h3>
+    <p><span style="color:#ef4444; font-size:30px;">■</span> Comparing</p>
+    <p><span style="color:#c5c522; font-size:30px;">■</span> Swap</p>
+    <p><span style="color:orange; font-size:30px;">■</span> Heap Node</p>
+    <p><span style="color:#22c55e; font-size:30px;">■</span> Sorted</p>
+  </div>
+
+  <!-- Time Complexity -->
+  <div class="card">
+    <h3>⏱ Time Complexity</h3>
+    <p>🟢 Best: O(n log n)</p>
+    <p>🟡 Average: O(n log n)</p>
+    <p>🔴 Worst: O(n log n)</p>
+  </div>
+
+  <!-- Memory Usage -->
+  <div class="card">
+    <h3>💾 Memory Usage</h3>
+    <p>📦 Extra Space: O(1)</p>
+    <p>⚡ In-place sorting</p>
+  </div>
+
+  <!-- When to Use -->
+  <div class="card">
+    <h3>📌 When to Use</h3>
+    <p class="good">✔ Large datasets</p>
+    <p class="good">✔ When consistent performance needed</p>
+    <p class="bad">✖ When stability is required</p>
+  </div>
+
+  <!-- Pseudocode -->
+  <div class="card">
+    <h3>🧠 Pseudocode</h3>
+    <pre style="font-size:13px; white-space:pre-wrap;">
+build max heap
+for i = n-1 to 1:
+  swap(arr[0], arr[i])
+  heapify(arr, i, 0)
+    </pre>
+  </div>
+
+  <!-- Memory Trick -->
+  <div class="card">
+    <h3>💡 Memory Trick</h3>
+    <p>🌳 Use a binary heap</p>
+    <p>Root always stores largest element</p>
+  </div>
+
+</div>
+<script src="bubble.js"></script>
+<script src="visualization.js"></script>
+</body>
+</html>

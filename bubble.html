@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bubble Sort Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="visualization.css">
+</head>
+
+<body>
+  <header>
+  <h1>AlgoFlow Visualizer</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="comparison.html">Compare</a>
+    <a href="https://www.programiz.com/c-programming/online-compiler/">Compiler</a>
+  </nav>
+</header>
+<h1>Bubble Sort Visualizer</h1>
+
+<input id="inputArray" value="5,3,8,1,2,7" />
+
+<div class="controls">
+  <button onclick="startSort()">Start</button>
+  <button class="stop-btn" onclick="stopSort()">Stop</button>
+  <button class="reset-btn" onclick="resetAll()">Reset</button>
+
+  <div>Speed: <span id="speedValue">Medium</span></div>
+  <input type="range" id="speedSlider" min="100" max="1500" value="700" step="100">
+</div>
+
+<div class="bars" id="bars"></div>
+<p id="explanation"></p>
+
+<div class="info">
+  <div class="card">
+    <h3> 🎨Legend</h3>
+    <p><span style="color:teal; font-size: 30px;" >■</span> Normal (Unsorted)</p>
+    <p><span style="color:red; font-size: 30px;">■</span> Comparing</p>
+    <p><span style="color:#c5c522; font-size: 30px;">■</span> Swapped</p>
+    <p><span style="color:#10b981; font-size: 30px;">■</span> Sorted</p>
+  </div>
+  <div class="card">
+    <h3>⏱ Time Complexity</h3>
+    <p>🟢 Best: O(n)</p>
+    <p>🟡 Average: O(n²)</p>
+    <p>🔴 Worst: O(n²)</p>
+  </div>
+
+  <div class="card">
+    <h3>💾 Memory Usage</h3>
+    <p>📦 Extra Space: O(1)</p>
+    <p>⚡ In-place sorting</p>
+  </div>
+
+  <div class="card">
+    <h3>📌 When to Use</h3>
+    <p class="good">✔ Small datasets</p>
+    <p class="good">✔ Nearly sorted arrays</p>
+    <p class="bad">✖ Large datasets</p>
+  </div>
+
+  <div class="card">
+    <h3>🧠 Pseudocode</h3>
+    <pre style="font-size:13px; white-space:pre-wrap;">
+for i = 0 to n-1:
+  for j = 0 to n-i-2:
+    if arr[j] > arr[j+1]:
+      swap(arr[j], arr[j+1])
+    </pre>
+  </div>
+
+  <div class="card">
+    <h3>💡 Memory Trick</h3>
+    <p>🫧 “Bubbles rise to the top”</p>
+    <p>Largest elements move to the end</p>
+  </div>
+</div>
+<script src="bubble.js"></script>
+<script src="visualization.js"></script>
+</body>
+</html>
