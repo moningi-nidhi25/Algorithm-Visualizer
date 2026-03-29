@@ -24,19 +24,19 @@ Instead of memorizing code, users can:
 
 ### 🏠 Home Page
 
-<img width="100%" alt="Home Screenshot" src="https://via.placeholder.com/1200x500.png?text=AlgoFlow+Home+Page">
+<img width="100%" alt="Home Screenshot" src="assests/home.png">
 
 ### 📊 Algorithm Visualization
 
-<img width="100%" alt="Visualizer Screenshot" src="https://via.placeholder.com/1200x500.png?text=Sorting+Visualization">
+<img width="100%" alt="Visualizer Screenshot" src="assests/visualizer.png">
 
 ### 📈 Comparison Dashboard
 
-<img width="100%" alt="Comparison Screenshot" src="https://via.placeholder.com/1200x500.png?text=Algorithm+Comparison">
+<img width="100%" alt="Comparison Screenshot" src="assests/comparator.png">
 
 ### 🧠 Quiz Section
 
-<img width="100%" alt="Quiz Screenshot" src="https://via.placeholder.com/1200x500.png?text=Quiz+Interface">
+<img width="100%" alt="Quiz Screenshot" src="assests/quiz.png">
 
 ---
 
